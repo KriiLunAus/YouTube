@@ -14,7 +14,7 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarActiveTintColor: Colors[colorScheme ?? 'dark'].tint,
         headerShown: false,
         tabBarButton: HapticTab,
         tabBarBackground: TabBarBackground,
@@ -34,10 +34,31 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="shorts"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Shorts',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="4.lane" color={color} />,
+        }}
+      />
+        <Tabs.Screen
+          name="add"
+          options={{
+            title: '',
+            tabBarIcon: ({ color }) => <IconSymbol size={30} name="plus" color={color} />,
+          }}
+        />
+       <Tabs.Screen
+        name="subscriptions"
+        options={{
+          title: 'Subscriptions',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="list.dash" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="you"
+        options={{
+          title: 'You',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="person" color={color} />,
         }}
       />
     </Tabs>

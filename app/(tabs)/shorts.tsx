@@ -1,15 +1,16 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text } from 'react-native'
 import React from 'react'
+import { StyleSheet } from 'react-native'
 
-const index = () => {
+const shorts = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>index</Text>
+      <Text style={styles.text}>shorts</Text>
     </View>
   )
 }
 
-export default index
+export default shorts
 
 const styles = StyleSheet.create({
   container: {
@@ -21,6 +22,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     color: "#fafafa",
     textAlign: 'center'
+
   }
 }
 )
